@@ -2,6 +2,15 @@
     --main-font-size: 1.35em;
 }
 
+body {
+    overflow-x: hidden;
+    background-image:
+    url(assets/capa.png),
+    url(assets/ruido.png),
+    linear-gradient(to right, rgba(255, 0, 64, 0.712) 10%, rgba(255, 0, 157, 0.692) 30%, rgba(129, 0, 189, 0.705));
+    background-attachment: fixed;
+}
+
 .logo {
     width: 9em;
 }
@@ -11,13 +20,8 @@ nav {
 }
 
 .cabecalho {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-image: url(assets/capa.png);
-}
-
-.cabecalho-bg {
-    background-image: linear-gradient(to right, rgba(255, 0, 64, 0.61) 10%,rgba(255, 0, 157, 0.568) 30%, rgba(129, 0, 189, 0.603));
 }
 
 .btn-cabecalho-1 {
@@ -49,6 +53,10 @@ h6 {
 @media (max-width: 767.98px) {
     :root {
         --main-font-size: 1.2em;
+    }
+
+    .logo {
+        width: 7em;
     }
 
     h6 {
