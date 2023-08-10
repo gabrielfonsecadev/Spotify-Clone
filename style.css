@@ -11,12 +11,14 @@ body {
     background-attachment: fixed;
 }
 
-.logo {
-    width: 9em;
-}
 
+/*Cabeçalho*/
 nav {
     background-color: rgba(0, 0, 0, 0.555);
+}
+
+.logo {
+    width: 9em;
 }
 
 .cabecalho {
@@ -44,6 +46,69 @@ nav {
     text-align: center;
     padding: 5px;
 }
+/*FIm cabeçalho*/
+
+
+/*Área de conteúdo 1*/
+.albums {
+    width: 40%;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 40px;
+}
+
+.titulos h1, .titulos h5 {
+    color: blueviolet;
+}
+
+.titulos p {
+    color: black;
+}
+/*Fim área de conteúdo 1*/
+
+
+/*Área de conteúdo 2*/
+.artigo-2-texto {
+    width: 30%;
+}
+
+.rotacionar {
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    margin-top: 40px;
+}
+/*Fim área de conteúdo 2*/
+
+
+/*Rodapé*/
+.rodape {
+    background-color: black;
+    height: 230px;
+    position: relative;
+}
+
+.rodape a {
+    display: block;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+/*Fim rodapé*/
+
+
+/*Modificações gerais*/
+h1 {
+    font-weight: bold;
+    color: #9bf0e1;
+}
+
+h5 {
+    font-size: 4em;
+    font-weight: bold;
+    color: white
+}
 
 h6 {
     font-size: 8em;
@@ -54,88 +119,78 @@ p {
     font-weight: bold;
     color: white;
 }
-
-.titulos p {
-    color: black;
-}
-
-.albums {
-    width: 40%;
-    padding-left: 40px;
-    padding-bottom: 40px;
-}
-
-h5 {
-    font-size: 4em;
-    font-weight: bold;
-    color: white
-}
-
-.titulos h1, .titulos h5 {
-    color: blueviolet;
-}
-
-h1 {
-    font-weight: bold;
-    color: #9bf0e1;
-}
+/*Fim modificações gerais*/
 
 
-.rotacionar {
-    transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    -webkit-transform: rotate(30deg);
-    width: 70%;
-    margin-top: 40px;
-}
-
-.artigo-2-texto {
-    width: 30%;
-}
-
-.rodape {
-    
-}
-
+/*Media Queries*/
 @media (max-width: 767.98px) {
     :root {
         --main-font-size: 1.2em;
     }
 
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    /*Cabeçalho*/
     .logo {
         width: 7em;
     }
 
-    h6 {
-        font-size: 5em;
-    }
 
+    /*Área de conteúdo 2*/
     .artigo-2-texto {
         width: 80%;
     }
 
     .rotacionar {
-        margin-top: 0px;
+        margin-top: -70px;
         width: 95%;
     }
 
+    .rotacionar img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+
+    /*Rodapé*/
+    .rodape {
+        height: 50vh;
+    }
+    
+    h6 {
+        font-size: 5em;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+    /*Área de conteúdo 1*/
     .albums {
         width: 45%;
-        margin-left: 15px;
-        padding-left: 0px;
-        padding-bottom: 40px;
     }
 
+
+    /*Área de conteúdo 2*/
     .artigo-2-texto {
         width: 90%;
     }
 
     .rotacionar {
-        margin-top: 0px;
+        margin-top: -70px;
         margin-left: 200px;
         width: 60%;
+    }
+
+
+    /*Rodapé*/
+    .rodape {
+        height: 35vh;
+    }
+}
+
+@media (min-width: 1850px) {
+    .rotacionar {
+        width: 40%;
     }
 }

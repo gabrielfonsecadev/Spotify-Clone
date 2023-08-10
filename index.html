@@ -17,16 +17,16 @@
 
 <body>
     <header>
-        <nav class="nav navbar navbar-expand-md p-4 fixed-top">
+        <nav class="nav navbar navbar-expand-md p-4 fixed-top"><!--Logo Spotify-->
             <a href="" class="navbar-brand ml-md-3">
                 <img src="assets/spotify.svg" alt="Spotify logo" class="logo" />
             </a>
 
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao"><!--Botão "hambúrguer" de menu-->
                 <i class="fa-solid fa-bars text-white"></i>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navegacao">
+            <div class="collapse navbar-collapse justify-content-end" id="navegacao"><!--Navegação-->
                 <ul class="navbar-nav mr-md-3">
                     <li class="nav-item pr-4">
                         <a href="" class="nav-link text-white font-weight-bold">Premium</a>
@@ -50,7 +50,7 @@
             </div>
         </nav>
 
-        <div class="cabecalho d-flex justify-content-center align-items-center d-flex">
+        <div class="cabecalho d-flex justify-content-center align-items-center d-flex"><!--Texto principal header-->
             <div class="text-center flex-column">
                 <h6 class="text-white font-weight-bold mb-5 mt-5 mt-md-0">
                     Música para todos.
@@ -70,14 +70,15 @@
 
     <main>
         <section>
-            <div class="row pt-5 bg-white">
+            <div class="row pt-5 bg-white"><!--Área de álbums-->
                 <div class="col-lg-6 text-center">
-                    <img src="assets/img1.jpg" alt="" class="albums">
-                    <img src="assets/img2.jpg" alt="" class="albums">
-                    <img src="assets/img3.jpg" alt="" class="albums">
-                    <img src="assets/img4.jpg" alt="" class="albums">
+                    <img src="assets/img1.jpg" alt="Album Justin Bieber" class="albums">
+                    <img src="assets/img2.jpg" alt="Album Zara Larson" class="albums">
+                    <img src="assets/img3.jpg" alt="Album Trapsoul" class="albums">
+                    <img src="assets/img4.jpg" alt="Album Dayz" class="albums">
                 </div>
-                <div class="col-lg-6 p-5 pt-lg-0 pl-lg-0 titulos">
+
+                <div class="col-lg-6 p-5 pt-lg-0 pl-lg-0 titulos"><!--Área de textos álbums-->
                     <h5>O que o Spotify oferece?</h5>
                     <h1>Músicas</h1>
                     <p>O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.</p>
@@ -90,7 +91,7 @@
         </section>
 
         <section>
-            <div class="d-flex flex-column flex-xl-row">
+            <div class="d-flex flex-column flex-xl-row"><!--Área de conteúdos 2-->
                 <div class="m-5 artigo-2-texto">
                     <h5 class="mb-2">Fácil</h5>
                     <h1>Buscar</h1>
@@ -103,7 +104,7 @@
                     <p>Curta músicas novas toda segunda-feira com uma playlist personalizada para você. Ou relaxe e curta uma das rádios.</p>
                 </div>
                 
-                <div class="text-center rotacionar ml-xl-5 border">
+                <div class="text-center rotacionar ml-xl-5"><!--Imagens celular-->
                     <img src="assets/iphone1.png" alt="">
                     <img src="assets/iphone2.png" alt="">
                 </div>
@@ -111,9 +112,43 @@
         </section>
 
         <footer class="rodape">
-            <div class="row">
-                <div>
-                    <img src="assets/spotify.svg" alt="" class="logo">
+            <div class="row text-white">
+                <div class="col-12 col-xl-2 mt-5"><!--Logo Spotify-->
+                    <img src="assets/spotify.svg" alt="" class="logo ml-5">
+                </div>
+
+                <div class="col-5 col-md-2 mt-5 ml-5 ml-xl-0"><!--Links Company-->
+                    <small class="text-white-50">COMPANY</small>
+                    <a href="">Sobre</a>
+                    <a href="">Empregos</a>
+                    <a href="">Imprensa</a>
+                    <a href="">Novidades</a>
+                </div>
+
+                <div class="col-5 col-md-2 mt-5"><!--Links Comunidades-->
+                    <small class="text-white-50">COMUNIDADES</small>
+                    <a href="">Artistas</a>
+                    <a href="">Desenvolvedores</a>
+                    <a href="">Marcas</a>
+                </div>
+
+                <div class="col-5 col-md-2 mt-5 ml-5 ml-xl-0"><!--Links úteis-->
+                    <small class="text-white-50">LINKS ÚTEIS</small>
+                    <a href="">Ajuda</a>
+                    <a href="">Presentes</a>
+                    <a href="">Player da web</a>
+                </div>
+
+                <div class="col-5 col-md-3 text-md-center mt-5 pt-3"><!--Links Redes sociais-->
+                    <a href="" class="d-xl-inline mb-2">
+                        <i class="fa-brands fa-square-twitter fa-2xl"></i>
+                    </a>
+                    <a href="" class="d-xl-inline mb-2">
+                        <i class="fa-brands fa-square-instagram fa-2xl"></i>
+                    </a>
+                    <a href="" class="d-xl-inline">
+                        <i class="fa-brands fa-square-facebook fa-2xl"></i>
+                    </a>
                 </div>
             </div>
         </footer>
