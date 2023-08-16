@@ -24,7 +24,8 @@
                 <img src="assets/spotify.svg" alt="Spotify logo" class="logo" />
             </a>
 
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao"><!--Botão "hambúrguer" de menu-->
+            <button class="navbar-toggler" data-toggle="collapse"
+                data-target="#navegacao"><!--Botão "hambúrguer" de menu-->
                 <i class="fa-solid fa-bars text-white"></i>
             </button>
 
@@ -52,19 +53,48 @@
             </div>
         </nav>
 
-        <div class="cabecalho d-flex justify-content-center align-items-center d-flex"><!--Texto principal header-->
-            <div class="text-center flex-column">
-                <h6 class="text-white font-weight-bold mb-5 mt-5 mt-md-0">
-                    Música para todos.
-                </h6>
+        <div class="cabecalho row align-items-center"><!--Texto principal header-->
+            <div class="text-center col-12">
 
-                <div class="row">
-                    <a href="" class="btn-cabecalho-1 nav-link text-white col-md-5 m-md-auto mt-3 ml-5 mr-5">
-                        Aproveite o spotify free
-                    </a>
-                    <a href="" class="btn-cabecalho-2 nav-link text-white col-md-5 m-md-auto mt-3 ml-5 mr-5">
-                        Obter spotify premium
-                    </a>
+                <div id="carousel-controles" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <h6 class="text-white font-weight-bold mb-5 mt-5 mt-md-0">
+                                Música para todos.
+                            </h6>
+
+                            <div class="row justify-content-center">
+                                <a href=""
+                                class="btn-cabecalho-1 nav-link text-white col-xl-3 col-md-5 m-auto mb-sm-3">
+                                    Aproveite o spotify free
+                                </a>
+                                <a href=""
+                                class="btn-cabecalho-2 nav-link text-white col-xl-3 col-md-5 m-auto">
+                                    Obter spotify premium
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h6 class="text-white font-weight-bold mb-5 mt-5 mt-md-0">
+                                As melhores rádios
+                            </h6>
+
+                            <a href=""
+                            class="btn-cabecalho-2 nav-link text-white m-auto">
+                                <i class="fa-solid fa-music mr-3"></i>Ouça agora
+                            </a>
+                        </div>
+
+                        <a href="#carousel-controles" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#carousel-controles" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -83,9 +113,11 @@
                 <div class="col-lg-6 p-5 pt-lg-0 pl-lg-0 titulos"><!--Área de textos álbums-->
                     <h5>O que o Spotify oferece?</h5>
                     <h1>Músicas</h1>
-                    <p>O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.</p>
+                    <p>O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus
+                        favoritos em um só lugar.</p>
                     <h1>Playlists</h1>
-                    <p>No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da música.</p>
+                    <p>No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e
+                        especialistas da música.</p>
                     <h1>Novos lançamentos</h1>
                     <p>Escute os lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.</p>
                 </div>
@@ -100,12 +132,14 @@
                     <p>Já sabe o que quer escutar? É só apertar o play.</p>
 
                     <h1>Navegar</h1>
-                    <p>Veja os novos lançamentos, o que está bombando nas paradas e as melhores playlists para o seu momento.</p>
+                    <p>Veja os novos lançamentos, o que está bombando nas paradas e as melhores playlists para o seu
+                        momento.</p>
 
                     <h1>Descobrir</h1>
-                    <p>Curta músicas novas toda segunda-feira com uma playlist personalizada para você. Ou relaxe e curta uma das rádios.</p>
+                    <p>Curta músicas novas toda segunda-feira com uma playlist personalizada para você. Ou relaxe e
+                        curta uma das rádios.</p>
                 </div>
-                
+
                 <div class="text-center rotacionar ml-xl-5"><!--Imagens celular-->
                     <img src="assets/iphone1.png" alt="">
                     <img src="assets/iphone2.png" alt="">
